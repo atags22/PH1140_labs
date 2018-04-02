@@ -1,0 +1,70 @@
+
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+%\usepackage[]{hyperref}
+% Title Page
+\title{Lab 2}
+\author{
+	Alex Taglieri
+	\\
+	Andrew Kacherski
+}
+
+\begin{document}
+	\maketitle
+	\newpage
+	\
+	\raggedright
+	
+	
+	\pagenumbering{arabic}
+	\section{Introduction and Background}
+	
+	
+	
+	\begin{equation}\label{parallelInSeries2}
+	\begin{split}
+	P&=F_y v_y\\
+	&=-F \frac{\partial y(x,t)}{\partial x} \frac{\partial y(x,t)}{\partial t}\\
+	&=-F [-A k sin(kx - \omega t)] [+A \omega sin(kx - \omega t)]\\
+	P=Fk \omega A^2 sin^2(kx- \omega t)
+	\end{split}
+	\end{equation}
+	
+	
+	
+	
+	\section{Procedure}
+	
+	The general strategy is to measure the \textit{k}-value of just one spring, then measure the \textit{k}-value of 4 springs in parallel and series, and then set both systems in oscillation and compare them.
+	
+	Hang the mass hanger from just one spring. Put 50 grams on the hanger and then zero the scale. Then start the mass at 200 grams and increase the mass by 200 grams at a time until the mass is 1000 grams, recording the displacement for each step. Calculate the k-value. 
+	Repeat the procedure for the 4-spring arrangement, with the springs both in parallel and in series.
+	
+	Then set the system in motion with 600 grams of mass for the 4-spring arrangement and record the position over time. Finally, set the 1-spring arrangement in motion with 300 grams of mass hanging.
+	
+	
+	\section{Results}
+	
+	The single spring we tested had a \textit{k}-value of 33.21. The masses were within \textit{0.5g} of their expected mass.
+	
+	The 4-spring combination had a resultant k-value of 32.82. This is within 1 \textit{$\frac{N}{m}$} of the expected value - an error of about 3\%.
+	
+	The angular frequency observed for one spring was 10.45, and the angular frequency for all four springs was 7.43. Since the \textit{k}-value was the same, the discrepancy can be explained because there was a different mass on the system.
+	
+	\section{Discussion}
+	The theory predicted that the \textit{k} value of four springs springs in both series and parallel would be described by Equation \ref{parallelInSeries} (reproduced here for clarity):
+	
+	\begin{equation*}
+	k_{seriesParallel}=\frac{1}{\frac{1}{k_1+k_2} + \frac{1}{k_3+k_4}} = k \tag{\ref{parallelInSeries}}
+	\end{equation*}
+	
+	The position, velocity, and acceleration graphs had a nice structure to them. The velocity graph was phase shifted by $ \frac{\pi}{2} $ radians - the exact amount we would have expected from the equations. Furthermore, the acceleration graph was once again shifted $\frac{\pi}{2} $ radians from the velocity graph, and it followed the exact opposite of the position graph. This behavior follows nicely from the equations in the Introduction and Background section.
+	
+	The phase shifting occurs for an intuitive reason. Force and acceleration peak at the same time. The velocity is zero when the acceleration is at its maximum, because the spring is stretched all the way and the mass is reversing direction. Finally, the distance is zero when the velocity is at its maximum because the mass is crossing its equilibrium point.
+	
+	Putting the springs in series did, in fact, change their k values according to equation \ref{seriesSpring}.
+	
+\end{document}          
