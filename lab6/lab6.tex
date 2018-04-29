@@ -1,0 +1,123 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+%\usepackage[]{hyperref}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+% Title Page
+\title{Lab 6}
+\author{
+	Alex Taglieri
+	\\
+	Andrew Kacherski
+	}
+
+\begin{document}
+\maketitle
+\newpage
+\
+\raggedright
+
+
+\pagenumbering{arabic}
+\section{Introduction and Background}
+
+This lab explores the behavior of standing waves on a string.
+
+Standing waves on a string can be defined by the following equation:
+
+\begin{equation}\label{waveEquation}
+y(x,t) = Acos(kx-\omega t)
+\end{equation}
+
+where $A$ is the amplitude, k is the wave number, and $\omega$ is the angular frequency.
+
+The wavelength $\lambda$ can be determined from the equation that relates wavelength, wave speed, and frequency:
+
+\begin{equation}
+\lambda=v/f
+\end{equation}
+
+This equation is especially useful when wavespeed and frequency are both known. It's possible to find wavespeed using the following equation:
+
+\begin{equation}
+v=\sqrt{F/\mu}
+\end{equation}
+
+where $F$ is the tension on the string and $\mu$ is given by the formula
+
+\begin{equation}
+\mu=m/L
+\end{equation}
+
+which is the mass of the string (m) divided by its length (L).
+
+
+
+\section{Procedure}
+
+Setup: Attach the wave generator to a string that's strung horizontally across a table and connected to a pulley at the other end. Attach a mass to the string that's passed over the pulley. Vary the mass hanging from the string between different values so that every harmonic of the string can be produced.
+\newline
+
+
+\section{Results}
+
+The length of the string in all cases was 1.5m.
+\newline
+
+All of these measurements were taken at $f=120Hz$.
+\newline
+\newline
+
+\begin{tabular}{ccccccc}
+
+n & L & M & $\lambda=2L/n$ & $v_exp=fλ$ & $T_exp=Mg$ & $\mu=T_exp/v_exp^2$ \\
+
+& (m) & (kg) & (m) & (m/s) & (N) & (kg/m) \\
+
+2 & 1.5 & 0.6 & 1.5 & 180 & 5.88 & 0.000181 \\
+
+3 & 1.5 & 0.3 & 1 & 120 & 2.94 & 0.000204 \\
+
+4 & 1.5 & 0.15 & 0.75 & 90 & 1.47 & 0.000181 \\
+
+5 & 1.5 & 0.1 & 0.6 & 72 & 0.98 & 0.000189 \\
+
+6 & 1.5 & 0.09 & 0.5 & 60 & 0.882 & 0.000245 \\
+
+7 & 1.5 & 0.05 & 0.4285714286 & 51.42857143 & 0.49 & 0.000185 \\
+
+8 & 1.5 & 0.032 & 0.375 & 45 & 0.3136 & 0.000155 \\
+
+9 & 1.5 & & 0.3333333333 & 40 & 0 & 0 \\
+
+10 & 1.5 & & 0.3 & 36 & 0 & 0 \\
+
+11 & 1.5 & & 0.2727272727 & 32.72727273 & 0 & 0 \\
+
+\end{tabular}
+\newline
+\newline
+
+The height of the mass from the floor changed from 0.585m to 0.55m. 
+\newline
+
+We noticed that the amplitude of the waves can be increased by tuning the mass on the end of the string. The closer the tension is to an exact multiple of the tension that leads to perfectly harmonic oscillation at the frequency of the wave generator, the larger each oscillation becomes. Sometimes adding more weight makes the string more energetic, but past a certain point the reflected waves start canceling out the initial waves and the amplitude is attenuated.
+
+\section{Discussion}
+It is clear from the data that higher mass leads to a higher frequency in the string, but a lower period. The distance between the nodes decreases when the mass increases. According to the equation from the background section that deals with wavespeed, the two important factors are wavelength and frequency. The frequency is chosen by the wave generator. Wavelength is the only variable that can be tuned. Wavelength is determined by mass density and tension. We're directly changing the tension on the string, and indirectly changing its mass density.
+\newline
+
+The equations from the background section can be combined to find that
+
+\begin{equation}
+\lambda=\frac{\sqrt{\frac{FL}{m}}}{f}
+\end{equation}
+
+Or, since f=120Hz, L=1.5m, and $F$ and $\lambda$ depend on the data point, we can choose values of $F$ and $\lambda$ to find $L$ and $m$, and therefore find $\mu$.
+\newline
+
+The lab says that we should measure the change in the length of the string, because a different length will lead to a different mass density. The lab is correct that a there will be a different mass density, but it won't be because the length is changing. The length of the string is fixed by the distance between the frequency generator and the pulley. Instead, the mass hangs a bit lower because the string is stretching in the horizontal direction. When the string stretches, the same mass is distributed across a longer area, so its mass density for any given length will be lower. The mass of the string across the meter and a half across which we're measuring is slightly lower!
+
+
+\end{document}          
